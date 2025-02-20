@@ -5,77 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Theseus Consulting Group</title>
   <style>
+    /* Basic Reset & Box Sizing */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
+    /* Body & Font Settings */
     body {
       font-family: Arial, sans-serif;
-      background: #fff;
-      color: #333;
+      background-color: #ffffff;
+      color: #333333;
       line-height: 1.6;
     }
+
+    /* Container to Limit Width */
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header & Hero Section */
     header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 60px 20px;
-      text-align: center;
       background: #f9f9f9;
+      padding: 40px 0;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
     }
     header img {
-      max-width: 150px;
+      max-width: 120px;
       margin-bottom: 20px;
     }
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
       color: #000;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      color: #666;
       max-width: 600px;
-      margin-bottom: 2rem;
+      margin: 0 auto 20px auto;
     }
-    .cta-buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
+
+    /* Navigation (Optional Anchors for Smooth Scrolling) */
+    nav {
+      margin: 20px 0;
     }
-    .cta-buttons a {
+    nav a {
       text-decoration: none;
-      color: #fff;
-      background: #0072c6;
-      padding: 0.8rem 1.5rem;
-      border-radius: 4px;
+      color: #0072c6;
+      margin: 0 10px;
       font-weight: bold;
-      transition: background 0.3s ease;
     }
-    .cta-buttons a:hover {
-      background: #005999;
+    nav a:hover {
+      text-decoration: underline;
     }
-    main {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    main h2 {
+
+    /* Section Headings */
+    section h2 {
       font-size: 2rem;
-      margin-bottom: 1rem;
-      text-align: center;
+      margin-bottom: 10px;
+      color: #000;
     }
-    main p {
+
+    /* General Section Spacing */
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid #eee;
+    }
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    /* Paragraph Spacing */
+    section p {
       margin-bottom: 1.5rem;
       text-align: justify;
     }
+
+    /* Contact Form */
+    form {
+      max-width: 600px;
+      margin: 20px auto 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    form label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    form textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    form button {
+      background-color: #0072c6;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+    form button:hover {
+      background-color: #005999;
+    }
+
+    /* Footer */
     footer {
-      text-align: center;
-      padding: 20px;
       background: #f9f9f9;
-      margin-top: 40px;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
     }
     footer p {
       font-size: 0.9rem;
@@ -87,40 +143,113 @@
 
   <!-- HEADER / HERO SECTION -->
   <header>
-    <img src="images/logo.png" alt="Theseus Consulting Group Logo">
+    <!-- Make sure logo.png is in the same folder as index.html -->
+    <img src="logo.png" alt="Theseus Consulting Group Logo">
     <h1>Theseus Consulting Group</h1>
-    <p>
-      Empowering your business with innovative solutions in learning management, 
-      payroll, bookkeeping, and beyond.
-    </p>
-    <div class="cta-buttons">
-      <a href="#services">Services</a>
-      <a href="#contact">Contact Us</a>
-      <a href="#guide">Watch a Short Guide</a>
-    </div>
+    <p>Empowering your business with innovative solutions in learning management, payroll, bookkeeping, and beyond.</p>
+    <nav>
+      <!-- Optional navigation links to each section -->
+      <a href="#backstory">Backstory</a>
+      <a href="#how-we-work">How We Work</a>
+      <a href="#learning-management">Learning Management</a>
+      <a href="#bookkeeping">Bookkeeping</a>
+      <a href="#contact-us">Contact</a>
+    </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main>
-    <h2>Basics of How We Work</h2>
+  <!-- BACKSTORY SECTION -->
+  <section id="backstory" class="container">
+    <h2>Our Backstory</h2>
     <p>
-      Founded in 2020, Theseus Consulting Group offers a range of services designed 
-      to help organizations streamline their operations and achieve sustainable growth. 
-      By combining our expertise in learning management, financial systems, and 
-      strategic advisory, we tailor solutions that fit the unique needs of each client.
+      Founded in 2020, Theseus Consulting Group emerged from a passion for redefining business success in the modern era.
+      Our team of seasoned professionals has deep expertise in finance, operations, and learning development, ensuring we
+      can tackle the most pressing organizational challenges. Over the years, we've refined our approach to blend proven
+      strategies with cutting-edge technologies, helping clients navigate ever-changing market demands.
     </p>
     <p>
-      Our process begins with a thorough assessment of your current workflows, 
-      identifying areas for improvement and key opportunities. We then collaborate 
-      with your team to develop targeted strategies and implement robust solutions 
-      that optimize efficiency, reduce costs, and elevate performance.
+      The name "Theseus" was chosen to symbolize our commitment to guiding businesses through complex challenges—just as
+      the mythical hero navigated the labyrinth. We strive to serve as a trusted partner, illuminating the path toward
+      sustainable growth and operational excellence.
+    </p>
+  </section>
+
+  <!-- HOW WE WORK SECTION -->
+  <section id="how-we-work" class="container">
+    <h2>How We Work</h2>
+    <p>
+      At Theseus Consulting Group, we believe that every organization is unique. Our engagements typically begin with
+      a thorough assessment of your existing processes, technologies, and culture. We then collaborate closely with
+      your team to develop a tailored roadmap that addresses critical pain points while aligning with your long-term
+      vision. 
     </p>
     <p>
-      Whether you need a complete overhaul of your payroll processes, support with 
-      bookkeeping and financial analysis, or a transformative learning management 
-      program, our dedicated consultants stand ready to guide you every step of the way.
+      We place a strong emphasis on measurable outcomes. By setting clear milestones and leveraging data-driven insights,
+      we ensure that every initiative delivers tangible results. Whether you're seeking a quick optimization of existing
+      workflows or a comprehensive organizational transformation, our adaptive methodology and client-centric approach
+      guarantee a seamless experience from start to finish.
     </p>
-  </main>
+  </section>
+
+  <!-- LEARNING MANAGEMENT SECTION -->
+  <section id="learning-management" class="container">
+    <h2>Learning Management</h2>
+    <p>
+      In today's fast-paced world, continuous learning is essential for maintaining a competitive edge. Our Learning
+      Management solutions empower organizations to foster a culture of professional growth and innovation. We design
+      and implement robust systems that:
+    </p>
+    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+      <li>Provide personalized, engaging training experiences.</li>
+      <li>Integrate seamlessly with existing HR and IT infrastructures.</li>
+      <li>Leverage analytics to measure effectiveness and ROI.</li>
+      <li>Offer scalable solutions for remote, hybrid, and on-site workforces.</li>
+    </ul>
+    <p>
+      From onboarding new hires to upskilling seasoned professionals, our Learning Management strategies ensure your
+      workforce remains agile, motivated, and prepared for the challenges ahead.
+    </p>
+  </section>
+
+  <!-- BOOKKEEPING SECTION -->
+  <section id="bookkeeping" class="container">
+    <h2>Bookkeeping & Financial Stewardship</h2>
+    <p>
+      Sound financial management is the backbone of any thriving organization. Our bookkeeping services go beyond
+      number-crunching to provide a holistic view of your financial health. Our experts:
+    </p>
+    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+      <li>Ensure accurate and timely record-keeping.</li>
+      <li>Develop streamlined workflows to reduce overhead costs.</li>
+      <li>Implement advanced reporting tools for real-time insights.</li>
+      <li>Advise on compliance, tax, and regulatory matters.</li>
+    </ul>
+    <p>
+      By integrating best practices and the latest technology, we help you maintain a solid financial foundation that
+      supports sustainable growth and stability.
+    </p>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact-us" class="container">
+    <h2>Contact Us</h2>
+    <p>
+      Ready to take the next step? Whether you have questions about our services or want to discuss a specific project,
+      we’re here to help. Get in touch, and let's explore how Theseus Consulting Group can guide your organization
+      toward new horizons.
+    </p>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
   <!-- FOOTER -->
   <footer>
@@ -129,3 +258,4 @@
 
 </body>
 </html>
+
