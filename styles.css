@@ -73,12 +73,13 @@ ul {
 }
 
 section {
-  padding: 80px 0;
+  padding: 100px 0; /* Increased padding for more space between sections */
+  margin-bottom: 20px; /* Added margin between sections */
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px; /* Increased margin for more spacing */
   position: relative;
 }
 
@@ -257,9 +258,10 @@ header {
 .service-card {
   background-color: var(--white);
   border-radius: 8px;
-  padding: 30px;
+  padding: 40px; /* Increased padding inside cards */
   box-shadow: var(--shadow);
   transition: var(--transition);
+  margin-bottom: 20px; /* Added spacing between cards */
 }
 
 .service-card:hover {
@@ -281,8 +283,9 @@ header {
 .about-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
+  gap: 70px; /* Increased gap for more spacing */
   align-items: center;
+  margin: 40px 0; /* Added margin around the grid */
 }
 
 .about-image {
@@ -308,7 +311,11 @@ header {
 
 .process-step {
   text-align: center;
-  padding: 30px;
+  padding: 40px; /* Increased padding */
+  background-color: var(--white); /* Added background color for better visual separation */
+  border-radius: 8px; /* Added rounded corners */
+  box-shadow: var(--shadow); /* Added shadow for depth */
+  margin: 10px; /* Added margin around steps */
 }
 
 .step-number {
@@ -337,9 +344,9 @@ header {
 
 .contact-box {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 30px auto; /* Added margin for spacing */
   background-color: var(--light);
-  padding: 40px;
+  padding: 50px; /* Increased padding */
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
@@ -427,6 +434,7 @@ header {
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  margin-bottom: 30px; /* Added margin for spacing */
 }
 
 .team-member:hover {
