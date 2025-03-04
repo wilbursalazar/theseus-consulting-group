@@ -345,7 +345,7 @@
   <!-- Bookkeeping Section (Enhanced) -->
   <section id="bookkeeping" class="container" style="background-color: var(--light);">
     <div class="section-title">
-      <h2>Bookkeeping & Financial Services</h2>
+      <h2>Bookkeeping & Business Services</h2>
     </div>
     <p class="section-subtitle">Build a solid financial foundation with our comprehensive bookkeeping and financial management solutions.</p>
     
@@ -354,20 +354,20 @@
         <img src="bookkeeping.jpg" alt="Bookkeeping Services">
       </div>
       <div class="about-content">
-        <p>
-          Sound financial management is the backbone of any thriving organization. Our bookkeeping services go beyond
-          number-crunching to provide a holistic view of your financial health. Our experts:
+                  <p>
+          Sound business management is the backbone of any thriving organization. Our services go beyond
+          basic record-keeping to provide a holistic view of your operational health. Our experts:
         </p>
         <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
           <li>Ensure accurate and timely record-keeping</li>
           <li>Develop streamlined workflows to reduce overhead costs</li>
           <li>Implement advanced reporting tools for real-time insights</li>
-          <li>Advise on compliance, tax, and regulatory matters</li>
-          <li>Optimize cash flow management processes</li>
-          <li>Prepare detailed financial forecasts and budgets</li>
+          <li>Provide guidance on business operations</li>
+          <li>Optimize process management</li>
+          <li>Prepare detailed forecasts and budgets</li>
         </ul>
         <p>
-          By integrating best practices and the latest technology, we help you maintain a solid financial foundation that
+          By integrating best practices and the latest technology, we help you maintain a solid operational foundation that
           supports sustainable growth and stability.
         </p>
         <a href="#contact" class="cta-button">Get Financial Clarity</a>
@@ -424,7 +424,7 @@
             </div>
             <div class="contact-text">
               <span class="contact-label">Our Location</span>
-              <span>1250 Financial District, Suite 500<br>San Francisco, CA 94111</span>
+              <span>2850 E Camelback Rd, Suite 110<br>Phoenix, AZ 85016</span>
             </div>
           </div>
           
@@ -542,7 +542,7 @@
   <!-- Back to Top Button -->
   <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-  <!-- JavaScript -->
+  <!-- JavaScript for Enhanced Functionality -->
   <script>
     // Mobile Navigation Toggle
     const mobileToggle = document.querySelector('.mobile-toggle');
@@ -581,6 +581,14 @@
         } else {
           backToTopButton.classList.remove('active');
         }
+      });
+      
+      backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
       });
     }
     
@@ -633,6 +641,9 @@
         this.reset();
       });
     }
+    
+    // You can add more interactive functionality here
+    // Netlify will execute this JavaScript as it's included directly in the HTML
   </script>
 </body>
 </html>
