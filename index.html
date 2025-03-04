@@ -3,259 +3,620 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Theseus Consulting Group</title>
-  <style>
-    /* Basic Reset & Box Sizing */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Body & Font Settings */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333333;
-      line-height: 1.6;
-    }
-
-    /* Container to Limit Width */
-    .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    /* Header & Hero Section */
-    header {
-      background: #f9f9f9;
-      padding: 40px 0;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-    header img {
-      max-width: 120px;
-      margin-bottom: 20px;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #000;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #666;
-      max-width: 600px;
-      margin: 0 auto 20px auto;
-    }
-
-    /* Navigation (Optional Anchors for Smooth Scrolling) */
-    nav {
-      margin: 20px 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #0072c6;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Section Headings */
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      color: #000;
-    }
-
-    /* General Section Spacing */
-    section {
-      padding: 40px 0;
-      border-bottom: 1px solid #eee;
-    }
-    section:last-of-type {
-      border-bottom: none;
-    }
-
-    /* Paragraph Spacing */
-    section p {
-      margin-bottom: 1.5rem;
-      text-align: justify;
-    }
-
-    /* Contact Form */
-    form {
-      max-width: 600px;
-      margin: 20px auto 0 auto;
-      display: flex;
-      flex-direction: column;
-    }
-    form label {
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    form input[type="text"],
-    form input[type="email"],
-    form textarea {
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-family: inherit;
-      font-size: 1rem;
-    }
-    form textarea {
-      min-height: 100px;
-      resize: vertical;
-    }
-    form button {
-      background-color: #0072c6;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      font-size: 1rem;
-      cursor: pointer;
-      align-self: flex-start;
-    }
-    form button:hover {
-      background-color: #005999;
-    }
-
-    /* Footer */
-    footer {
-      background: #f9f9f9;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: 20px;
-    }
-    footer p {
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+  <meta name="description" content="Theseus Consulting Group provides innovative solutions in learning management, payroll, bookkeeping, and business transformation.">
+  <title>Theseus Consulting Group | Business Transformation Experts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- HEADER / HERO SECTION -->
-  <header>
-    <!-- Make sure logo.png is in the same folder as index.html -->
-    <img src="logo.png" alt="Theseus Consulting Group Logo">
-    <h1>Theseus Consulting Group</h1>
-    <p>Empowering your business with innovative solutions in learning management, payroll, bookkeeping, and beyond.</p>
-    <nav>
-      <!-- Optional navigation links to each section -->
-      <a href="#backstory">Backstory</a>
-      <a href="#how-we-work">How We Work</a>
-      <a href="#learning-management">Learning Management</a>
-      <a href="#bookkeeping">Bookkeeping</a>
-      <a href="#contact-us">Contact</a>
-    </nav>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="logo.png" alt="Theseus Consulting Group Logo">
+          <span class="logo-text">Theseus</span>
+        </div>
+        
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#process" class="nav-link">Process</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#team" class="nav-link">Team</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#contact" class="cta-button">Get Started</a></li>
+          </ul>
+          
+          <div class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <!-- BACKSTORY SECTION -->
-  <section id="backstory" class="container">
-    <h2>Our Backstory</h2>
-    <p>
-      Founded in 2020, Theseus Consulting Group emerged from a passion for redefining business success in the modern era.
-      Our team of seasoned professionals has deep expertise in finance, operations, and learning development, ensuring we
-      can tackle the most pressing organizational challenges. Over the years, we've refined our approach to blend proven
-      strategies with cutting-edge technologies, helping clients navigate ever-changing market demands.
-    </p>
-    <p>
-      The name "Theseus" was chosen to symbolize our commitment to guiding businesses through complex challenges—just as
-      the mythical hero navigated the labyrinth. We strive to serve as a trusted partner, illuminating the path toward
-      sustainable growth and operational excellence.
-    </p>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Business Transformation That Delivers Results</h1>
+        <p class="hero-subtitle">We help organizations optimize their operations, elevate their learning management systems, and strengthen their financial foundations.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="cta-button">Schedule a Consultation</a>
+          <a href="#services" class="cta-button-secondary">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- HOW WE WORK SECTION -->
-  <section id="how-we-work" class="container">
-    <h2>How We Work</h2>
-    <p>
-      At Theseus Consulting Group, we believe that every organization is unique. Our engagements typically begin with
-      a thorough assessment of your existing processes, technologies, and culture. We then collaborate closely with
-      your team to develop a tailored roadmap that addresses critical pain points while aligning with your long-term
-      vision. 
-    </p>
-    <p>
-      We place a strong emphasis on measurable outcomes. By setting clear milestones and leveraging data-driven insights,
-      we ensure that every initiative delivers tangible results. Whether you're seeking a quick optimization of existing
-      workflows or a comprehensive organizational transformation, our adaptive methodology and client-centric approach
-      guarantee a seamless experience from start to finish.
-    </p>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+      </div>
+      <p class="section-subtitle">We provide comprehensive solutions tailored to your specific business needs and challenges.</p>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="service-title">Learning Management</h3>
+          <p>Develop robust learning systems that foster professional growth and maintain your competitive edge through continuous employee development.</p>
+          <a href="#learning-management">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="service-title">Bookkeeping & Finance</h3>
+          <p>Ensure accurate financial record-keeping, streamline processes, and gain real-time insights with our comprehensive financial management services.</p>
+          <a href="#bookkeeping">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-money-check-alt"></i>
+          </div>
+          <h3 class="service-title">Payroll Solutions</h3>
+          <p>Simplify your payroll process with our efficient, accurate, and compliant solutions designed to save time and eliminate errors.</p>
+          <a href="#payroll">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3 class="service-title">Process Optimization</h3>
+          <p>Identify bottlenecks, streamline workflows, and implement efficient systems to maximize productivity across your organization.</p>
+          <a href="#optimization">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- LEARNING MANAGEMENT SECTION -->
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="about-image.jpg" alt="Theseus Consulting Group Team">
+        </div>
+        
+        <div class="about-content">
+          <h2>Our Story</h2>
+          <p>Founded in 2020, Theseus Consulting Group emerged from a passion for redefining business success in the modern era. Our team of seasoned professionals has deep expertise in finance, operations, and learning development, ensuring we can tackle the most pressing organizational challenges.</p>
+          <p>The name "Theseus" was chosen to symbolize our commitment to guiding businesses through complex challenges—just as the mythical hero navigated the labyrinth. We strive to serve as a trusted partner, illuminating the path toward sustainable growth and operational excellence.</p>
+          <p>Over the years, we've refined our approach to blend proven strategies with cutting-edge technologies, helping clients navigate ever-changing market demands. Our focus on measurable outcomes and client success has established us as a leading consulting firm for businesses seeking transformation and growth.</p>
+          <a href="#" class="cta-button">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Process</h2>
+      </div>
+      <p class="section-subtitle">We follow a structured yet flexible approach to ensure every engagement delivers maximum value.</p>
+      
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Discovery</h3>
+          <p>We begin with a comprehensive assessment of your current processes, technologies, and organizational culture to identify key strengths and opportunities.</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Strategy</h3>
+          <p>Our team collaborates with you to develop a tailored roadmap that addresses critical pain points while aligning with your long-term vision and goals.</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Implementation</h3>
+          <p>We execute the strategy with precision, providing clear communication and regular updates throughout to ensure transparency and engagement.</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3 class="step-title">Optimization</h3>
+          <p>Through continuous monitoring and refinement, we optimize solutions to maximize ROI and ensure sustainable long-term success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>Client Testimonials</h2>
+      </div>
+      <p class="section-subtitle">Don't just take our word for it. See what our clients have to say about working with Theseus Consulting Group.</p>
+      
+      <div class="testimonials-container">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Theseus Consulting completely transformed our learning management system. Our employee engagement has increased by 45% and our training completion rates have doubled. Their team was professional, responsive, and truly understood our business needs."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="testimonial-1.jpg" alt="Sarah Johnson">
+            </div>
+            <div class="author-info">
+              <h4 class="author-name">Sarah Johnson</h4>
+              <p class="author-position">HR Director, FinTech Solutions Inc.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "The bookkeeping and financial management services provided by Theseus have been game-changing for our startup. We now have clear visibility into our finances and can make data-driven decisions with confidence. Highly recommended!"
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="testimonial-2.jpg" alt="Marcus Chen">
+            </div>
+            <div class="author-info">
+              <h4 class="author-name">Marcus Chen</h4>
+              <p class="author-position">CEO, Innovate Technologies</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Working with Theseus on our process optimization initiative exceeded all expectations. Their methodical approach and attention to detail helped us eliminate inefficiencies we didn't even know existed. The result: 30% cost reduction and happier employees."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-image">
+              <img src="testimonial-3.jpg" alt="Jessica Martinez">
+            </div>
+            <div class="author-info">
+              <h4 class="author-name">Jessica Martinez</h4>
+              <p class="author-position">COO, Global Manufacturing Ltd.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Expert Team</h2>
+      </div>
+      <p class="section-subtitle">Meet the experienced professionals behind Theseus Consulting Group who are passionate about your success.</p>
+      
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-image">
+            <img src="team-1.jpg" alt="Alexander Wright">
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Alexander Wright</h3>
+            <p class="member-position">Founder & CEO</p>
+            <p>Former CFO with 15+ years of experience in financial strategy and business transformation.</p>
+            <div class="member-socials">
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-image">
+            <img src="team-2.jpg" alt="Olivia Thompson">
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Olivia Thompson</h3>
+            <p class="member-position">Learning Solutions Director</p>
+            <p>EdTech specialist with extensive experience in developing corporate learning programs.</p>
+            <div class="member-socials">
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-image">
+            <img src="team-3.jpg" alt="Robert Kim">
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Robert Kim</h3>
+            <p class="member-position">Financial Services Lead</p>
+            <p>CPA with specialized expertise in creating efficient bookkeeping systems for growing businesses.</p>
+            <div class="member-socials">
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-image">
+            <img src="team-4.jpg" alt="Elena Rodriguez">
+          </div>
+          <div class="member-info">
+            <h3 class="member-name">Elena Rodriguez</h3>
+            <p class="member-position">Process Optimization Specialist</p>
+            <p>Six Sigma Black Belt with a track record of successful business process reengineering projects.</p>
+            <div class="member-socials">
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number">150+</div>
+          <div class="stat-title">Clients Served</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-title">Client Satisfaction</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-number">25+</div>
+          <div class="stat-title">Industry Experts</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-number">5</div>
+          <div class="stat-title">Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Management Section (Enhanced) -->
   <section id="learning-management" class="container">
-    <h2>Learning Management</h2>
-    <p>
-      In today's fast-paced world, continuous learning is essential for maintaining a competitive edge. Our Learning
-      Management solutions empower organizations to foster a culture of professional growth and innovation. We design
-      and implement robust systems that:
-    </p>
-    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-      <li>Provide personalized, engaging training experiences.</li>
-      <li>Integrate seamlessly with existing HR and IT infrastructures.</li>
-      <li>Leverage analytics to measure effectiveness and ROI.</li>
-      <li>Offer scalable solutions for remote, hybrid, and on-site workforces.</li>
-    </ul>
-    <p>
-      From onboarding new hires to upskilling seasoned professionals, our Learning Management strategies ensure your
-      workforce remains agile, motivated, and prepared for the challenges ahead.
-    </p>
+    <div class="section-title">
+      <h2>Learning Management Solutions</h2>
+    </div>
+    <p class="section-subtitle">Empower your organization with tailored learning systems that drive growth and innovation.</p>
+    
+    <div class="about-grid">
+      <div class="about-content">
+        <p>
+          In today's fast-paced world, continuous learning is essential for maintaining a competitive edge. Our Learning
+          Management solutions empower organizations to foster a culture of professional growth and innovation. We design
+          and implement robust systems that:
+        </p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+          <li>Provide personalized, engaging training experiences</li>
+          <li>Integrate seamlessly with existing HR and IT infrastructures</li>
+          <li>Leverage analytics to measure effectiveness and ROI</li>
+          <li>Offer scalable solutions for remote, hybrid, and on-site workforces</li>
+          <li>Support compliance requirements and regulatory training needs</li>
+          <li>Enable self-directed learning and career advancement pathways</li>
+        </ul>
+        <p>
+          From onboarding new hires to upskilling seasoned professionals, our Learning Management strategies ensure your
+          workforce remains agile, motivated, and prepared for the challenges ahead.
+        </p>
+        <a href="#contact" class="cta-button">Discuss Your Learning Needs</a>
+      </div>
+      <div class="about-image">
+        <img src="learning-management.jpg" alt="Learning Management Solution">
+      </div>
+    </div>
   </section>
 
-  <!-- BOOKKEEPING SECTION -->
-  <section id="bookkeeping" class="container">
-    <h2>Bookkeeping & Financial Stewardship</h2>
-    <p>
-      Sound financial management is the backbone of any thriving organization. Our bookkeeping services go beyond
-      number-crunching to provide a holistic view of your financial health. Our experts:
-    </p>
-    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
-      <li>Ensure accurate and timely record-keeping.</li>
-      <li>Develop streamlined workflows to reduce overhead costs.</li>
-      <li>Implement advanced reporting tools for real-time insights.</li>
-      <li>Advise on compliance, tax, and regulatory matters.</li>
-    </ul>
-    <p>
-      By integrating best practices and the latest technology, we help you maintain a solid financial foundation that
-      supports sustainable growth and stability.
-    </p>
+  <!-- Bookkeeping Section (Enhanced) -->
+  <section id="bookkeeping" class="container" style="background-color: var(--light);">
+    <div class="section-title">
+      <h2>Bookkeeping & Financial Services</h2>
+    </div>
+    <p class="section-subtitle">Build a solid financial foundation with our comprehensive bookkeeping and financial management solutions.</p>
+    
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="bookkeeping.jpg" alt="Bookkeeping Services">
+      </div>
+      <div class="about-content">
+        <p>
+          Sound financial management is the backbone of any thriving organization. Our bookkeeping services go beyond
+          number-crunching to provide a holistic view of your financial health. Our experts:
+        </p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+          <li>Ensure accurate and timely record-keeping</li>
+          <li>Develop streamlined workflows to reduce overhead costs</li>
+          <li>Implement advanced reporting tools for real-time insights</li>
+          <li>Advise on compliance, tax, and regulatory matters</li>
+          <li>Optimize cash flow management processes</li>
+          <li>Prepare detailed financial forecasts and budgets</li>
+        </ul>
+        <p>
+          By integrating best practices and the latest technology, we help you maintain a solid financial foundation that
+          supports sustainable growth and stability.
+        </p>
+        <a href="#contact" class="cta-button">Get Financial Clarity</a>
+      </div>
+    </div>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact-us" class="container">
-    <h2>Contact Us</h2>
-    <p>
-      Ready to take the next step? Whether you have questions about our services or want to discuss a specific project,
-      we’re here to help. Get in touch, and let's explore how Theseus Consulting Group can guide your organization
-      toward new horizons.
-    </p>
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="you@example.com" required />
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+  <!-- Payroll Section (New) -->
+  <section id="payroll" class="container">
+    <div class="section-title">
+      <h2>Payroll Solutions</h2>
+    </div>
+    <p class="section-subtitle">Take the complexity out of payroll with our accurate, efficient, and compliant solutions.</p>
+    
+    <div class="about-grid">
+      <div class="about-content">
+        <p>
+          Managing payroll can be time-consuming and complex, with significant consequences for errors. Our payroll solutions
+          are designed to simplify this critical function while ensuring accuracy and compliance. We offer:
+        </p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+          <li>Full-service payroll processing and management</li>
+          <li>Tax filing and compliance services</li>
+          <li>Employee self-service portals for pay stubs and tax documents</li>
+          <li>Integration with HR and accounting systems</li>
+          <li>Benefits administration and tracking</li>
+          <li>Custom reporting and analytics</li>
+        </ul>
+        <p>
+          Our payroll specialists stay updated on the latest regulations and requirements, giving you peace of mind
+          that your payroll operations are in expert hands.
+        </p>
+        <a href="#contact" class="cta-button">Streamline Your Payroll</a>
+      </div>
+      <div class="about-image">
+        <img src="payroll.jpg" alt="Payroll Solutions">
+      </div>
+    </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+      </div>
+      <p class="section-subtitle">Have questions or ready to explore how we can help? Reach out to our team today.</p>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Our Location</span>
+              <span>1250 Financial District, Suite 500<br>San Francisco, CA 94111</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Email Us</span>
+              <span>info@theseusconsulting.com<br>support@theseusconsulting.com</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Call Us</span>
+              <span>+1 (415) 555-1234<br>+1 (415) 555-5678</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Business Hours</span>
+              <span>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: By appointment only</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+            
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            
+            <button type="submit" class="form-button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Theseus Consulting Group. All Rights Reserved.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>About Theseus</h3>
+          <p>Theseus Consulting Group is dedicated to helping businesses navigate complex challenges and achieve sustainable growth through innovative solutions in learning management, finance, and operations.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-links">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="#learning-management">Learning Management</a></li>
+            <li><a href="#bookkeeping">Bookkeeping & Finance</a></li>
+            <li><a href="#payroll">Payroll Solutions</a></li>
+            <li><a href="#optimization">Process Optimization</a></li>
+            <li><a href="#">Strategic Consulting</a></li>
+            <li><a href="#">Technology Integration</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter for the latest insights and industry trends.</p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your Email" required>
+            <button type="submit" class="newsletter-button"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2025 Theseus Consulting Group. All Rights Reserved.</p>
+      </div>
+    </div>
   </footer>
 
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile Navigation Toggle
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    mobileToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      mobileToggle.querySelector('i').classList.toggle('fa-bars');
+      mobileToggle.querySelector('i').classList.toggle('fa-times');
+    });
+    
+    // Header Scroll Effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 100) {
+        header.classList.add('header-scrolled');
+      } else {
+        header.classList.remove('header-scrolled');
+      }
+    });
+    
+    // Back to Top Button
+    const backToTopButton = document.querySelector('.back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add('active');
+      } else {
+        backToTopButton.classList.remove('active');
+      }
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            mobileToggle.querySelector('i').classList.remove('fa-times');
+            mobileToggle.querySelector('i').classList.add('fa-bars');
+          }
+        }
+      });
+    });
+    
+    // Form submission - prevent default and show confirmation
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        this.reset();
+      });
+    }
+  </script>
 </body>
 </html>
 
