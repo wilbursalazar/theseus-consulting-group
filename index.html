@@ -1,63 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Theseus Consulting Group - Professional consulting services in learning management, business operations, and process optimization.">
-  <meta name="keywords" content="consulting, business consulting, learning management, process optimization, Phoenix">
-  <meta name="author" content="Theseus Consulting Group">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Theseus Consulting Group provides innovative solutions in learning management, payroll, bookkeeping, and business transformation.">
   <title>Theseus Consulting Group | Business Transformation Experts</title>
-  
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- AOS Animation Library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  
-  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="spinner"></div>
-  </div>
-
   <!-- Header -->
-  <header id="header" class="header">
+  <header id="header">
     <div class="container">
       <div class="nav-container">
-        <a href="#home" class="logo">
+        <div class="logo">
+          <!-- Using logo.png from your GitHub repository -->
           <img src="logo.png" alt="Theseus Consulting Group Logo">
           <span class="logo-text">Theseus</span>
-        </a>
+        </div>
         
-        <nav class="nav">
+        <nav>
           <ul class="nav-menu">
             <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#process" class="nav-link">Process</a></li>
+            <li><a href="#email-contact" class="nav-link">Contact</a></li>
             <li><a href="#team" class="nav-link">Team</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#contact" class="cta-button">Get Started</a></li>
           </ul>
           
-          <a href="#contact" class="cta-button mobile-hidden">Get Started</a>
-          
           <div class="mobile-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+            <i class="fas fa-bars"></i>
           </div>
         </nav>
       </div>
@@ -66,528 +40,610 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="hero-shapes">
-      <div class="shape-1"></div>
-      <div class="shape-2"></div>
-      <div class="shape-3"></div>
-    </div>
-    
     <div class="container">
-      <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-        <h1 class="hero-title">Business Transformation That <span class="text-gradient">Delivers Results</span></h1>
-        <p class="hero-subtitle">We help organizations optimize their operations, elevate their learning management systems, and strengthen their business foundations.</p>
-        
+      <div class="hero-content">
+        <h1 class="hero-title">Business Transformation That Delivers Results</h1>
+        <p class="hero-subtitle">We help organizations optimize their operations, elevate their learning management systems, and strengthen their financial foundations.</p>
         <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
-          <a href="#services" class="btn btn-outline">Explore Our Services</a>
-        </div>
-        
-        <div class="hero-stats">
-          <div class="stat-item">
-            <h3>150+</h3>
-            <p>Clients</p>
-          </div>
-          <div class="stat-item">
-            <h3>98%</h3>
-            <p>Satisfaction</p>
-          </div>
-          <div class="stat-item">
-            <h3>5+</h3>
-            <p>Years</p>
-          </div>
+          <a href="#contact" class="cta-button">Schedule a Consultation</a>
+          <a href="#services" class="cta-button-secondary">Explore Our Services</a>
         </div>
       </div>
-    </div>
-    
-    <div class="hero-scroll">
-      <a href="#services">
-        <div class="mouse">
-          <div class="wheel"></div>
-        </div>
-      </a>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="services section-padding">
+  <section id="services" class="services">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">What We Offer</span>
-        <h2 class="section-title">Our Services</h2>
-        <p class="section-description">We provide comprehensive solutions tailored to your specific business needs and challenges.</p>
+      <div class="section-title">
+        <h2>Our Services</h2>
       </div>
+      <p class="section-subtitle">We provide comprehensive solutions tailored to your specific business needs and challenges.</p>
       
       <div class="services-grid">
-        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-graduation-cap"></i>
           </div>
           <h3 class="service-title">Learning Management</h3>
-          <p class="service-description">Develop robust learning systems that foster professional growth and maintain your competitive edge through continuous employee development.</p>
-          <a href="#learning-management" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          <p>Develop robust learning systems that foster professional growth and maintain your competitive edge through continuous employee development.</p>
+          <a href="#learning-management">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
         
-        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-chart-line"></i>
           </div>
-          <h3 class="service-title">Business Operations</h3>
-          <p class="service-description">Streamline workflows, implement best practices, and optimize your operations to reduce costs and enhance overall business performance.</p>
-          <a href="#business-operations" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          <h3 class="service-title">Bookkeeping & Finance</h3>
+          <p>Ensure accurate financial record-keeping, streamline processes, and gain real-time insights with our comprehensive financial management services.</p>
+          <a href="#bookkeeping">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
         
-        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-icon">
-            <i class="fas fa-cogs"></i>
-          </div>
-          <h3 class="service-title">Process Optimization</h3>
-          <p class="service-description">Identify bottlenecks, streamline workflows, and implement efficient systems to maximize productivity across your organization.</p>
-          <a href="#process-optimization" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        
-        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-money-check-alt"></i>
           </div>
           <h3 class="service-title">Payroll Solutions</h3>
-          <p class="service-description">Simplify your payroll process with our efficient and accurate solutions designed to save time and eliminate errors.</p>
-          <a href="#payroll-solutions" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          <p>Simplify your payroll process with our efficient, accurate, and compliant solutions designed to save time and eliminate errors.</p>
+          <a href="#payroll">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
         
-        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-card">
           <div class="service-icon">
-            <i class="fas fa-users-cog"></i>
+            <i class="fas fa-cogs"></i>
           </div>
-          <h3 class="service-title">HR Consulting</h3>
-          <p class="service-description">Enhance your HR strategies with tailored solutions for recruitment, retention, employee experience, and organizational development.</p>
-          <a href="#hr-consulting" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        
-        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
-          <div class="service-icon">
-            <i class="fas fa-laptop-code"></i>
-          </div>
-          <h3 class="service-title">Technology Integration</h3>
-          <p class="service-description">Leverage the right technology solutions to enhance productivity, automate processes, and drive digital transformation.</p>
-          <a href="#technology-integration" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          <h3 class="service-title">Process Optimization</h3>
+          <p>Identify bottlenecks, streamline workflows, and implement efficient systems to maximize productivity across your organization.</p>
+          <a href="#optimization">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about section-padding bg-light">
+  <section id="about" class="about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-image" data-aos="fade-right">
-          <img src="about-image.jpg" alt="Theseus Consulting Team" class="img-fluid rounded">
-          <div class="experience-badge">
-            <span>5+</span>
-            <p>Years of Excellence</p>
-          </div>
+        <div class="about-image">
+          <img src="about-image.jpg" alt="Theseus Consulting Group Team">
         </div>
         
-        <div class="about-content" data-aos="fade-left">
-          <div class="section-header text-left">
-            <span class="section-subtitle">Our Story</span>
-            <h2 class="section-title">About Theseus Consulting Group</h2>
-          </div>
-          
-          <p>Founded in 2020, Theseus Consulting Group emerged from a passion for redefining business success in the modern era. Our team of seasoned professionals has deep expertise in operations, learning development, and business optimization, ensuring we can tackle the most pressing organizational challenges.</p>
-          
+        <div class="about-content">
+          <h2>Our Story</h2>
+          <p>Founded in 2020, Theseus Consulting Group emerged from a passion for redefining business success in the modern era. Our team of seasoned professionals has deep expertise in finance, operations, and learning development, ensuring we can tackle the most pressing organizational challenges.</p>
           <p>The name "Theseus" was chosen to symbolize our commitment to guiding businesses through complex challenges—just as the mythical hero navigated the labyrinth. We strive to serve as a trusted partner, illuminating the path toward sustainable growth and operational excellence.</p>
-          
-          <div class="about-features">
-            <div class="feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Experienced Consultants</span>
-            </div>
-            <div class="feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Tailored Solutions</span>
-            </div>
-            <div class="feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Proven Methodologies</span>
-            </div>
-            <div class="feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Result-Oriented Approach</span>
-            </div>
-          </div>
-          
-          <a href="#contact" class="btn btn-primary mt-4">Work With Us</a>
+          <p>Over the years, we've refined our approach to blend proven strategies with cutting-edge technologies, helping clients navigate ever-changing market demands. Our focus on measurable outcomes and client success has established us as a leading consulting firm for businesses seeking transformation and growth.</p>
+          <a href="#" class="cta-button">Learn More About Us</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Process Section -->
-  <section id="process" class="process section-padding">
+  <section id="process" class="process">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">How We Work</span>
-        <h2 class="section-title">Our Process</h2>
-        <p class="section-description">We follow a structured yet flexible approach to ensure every engagement delivers maximum value.</p>
+      <div class="section-title">
+        <h2>Our Process</h2>
       </div>
+      <p class="section-subtitle">We follow a structured yet flexible approach to ensure every engagement delivers maximum value.</p>
       
-      <div class="process-timeline">
-        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
-          <div class="timeline-dot">1</div>
-          <div class="timeline-content">
-            <h3>Discovery</h3>
-            <p>We begin with a comprehensive assessment of your current processes, technologies, and organizational culture to identify key strengths and opportunities.</p>
-          </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Discovery</h3>
+          <p>We begin with a comprehensive assessment of your current processes, technologies, and organizational culture to identify key strengths and opportunities.</p>
         </div>
         
-        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
-          <div class="timeline-dot">2</div>
-          <div class="timeline-content">
-            <h3>Strategy</h3>
-            <p>Our team collaborates with you to develop a tailored roadmap that addresses critical pain points while aligning with your long-term vision and goals.</p>
-          </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Strategy</h3>
+          <p>Our team collaborates with you to develop a tailored roadmap that addresses critical pain points while aligning with your long-term vision and goals.</p>
         </div>
         
-        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
-          <div class="timeline-dot">3</div>
-          <div class="timeline-content">
-            <h3>Implementation</h3>
-            <p>We execute the strategy with precision, providing clear communication and regular updates throughout to ensure transparency and engagement.</p>
-          </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Implementation</h3>
+          <p>We execute the strategy with precision, providing clear communication and regular updates throughout to ensure transparency and engagement.</p>
         </div>
         
-        <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
-          <div class="timeline-dot">4</div>
-          <div class="timeline-content">
-            <h3>Optimization</h3>
-            <p>Through continuous monitoring and refinement, we optimize solutions to maximize ROI and ensure sustainable long-term success.</p>
-          </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h3 class="step-title">Optimization</h3>
+          <p>Through continuous monitoring and refinement, we optimize solutions to maximize ROI and ensure sustainable long-term success.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Detail Section -->
-  <section id="learning-management" class="service-detail section-padding bg-light">
+  <!-- Email Contact Section -->
+  <section id="email-contact" class="email-contact">
     <div class="container">
-      <div class="row">
-        <div class="service-detail-content" data-aos="fade-right">
-          <div class="section-header text-left">
-            <span class="section-subtitle">Our Expertise</span>
-            <h2 class="section-title">Learning Management Solutions</h2>
-          </div>
-          
-          <p>Learning Management solutions empower organizations to foster a culture of professional growth and innovation. We design and implement robust systems that:</p>
-          
-          <ul class="service-features">
-            <li><i class="fas fa-check"></i> Provide personalized, engaging training experiences</li>
-            <li><i class="fas fa-check"></i> Integrate seamlessly with existing HR and IT infrastructures</li>
-            <li><i class="fas fa-check"></i> Leverage analytics to measure effectiveness and ROI</li>
-            <li><i class="fas fa-check"></i> Offer scalable solutions for remote, hybrid, and on-site workforces</li>
-            <li><i class="fas fa-check"></i> Support compliance requirements and regulatory training needs</li>
-            <li><i class="fas fa-check"></i> Enable self-directed learning and career advancement pathways</li>
-          </ul>
-          
-          <p>From onboarding new hires to upskilling seasoned professionals, our Learning Management strategies ensure your workforce remains agile, motivated, and prepared for the challenges ahead.</p>
-          
-          <a href="#contact" class="btn btn-primary mt-4">Discuss Your Learning Needs</a>
-        </div>
-        
-        <div class="service-detail-image" data-aos="fade-left">
-          <img src="images/learning-management.jpg" alt="Learning Management Solution" class="img-fluid rounded">
-        </div>
+      <div class="section-title">
+        <h2>Contact Us</h2>
       </div>
-    </div>
-  </section>
-
-  <section id="business-operations" class="service-detail section-padding">
-    <div class="container">
-      <div class="row reverse">
-        <div class="service-detail-image" data-aos="fade-right">
-          <img src="images/business-operations.jpg" alt="Business Operations" class="img-fluid rounded">
-        </div>
-        
-        <div class="service-detail-content" data-aos="fade-left">
-          <div class="section-header text-left">
-            <span class="section-subtitle">Our Expertise</span>
-            <h2 class="section-title">Business Operations</h2>
+      <p class="section-subtitle">Have a question or want to learn more about our services? Send us a message and we'll get back to you promptly.</p>
+      
+      <div class="contact-box">
+        <form id="emailForm" class="email-form">
+          <div class="form-row">
+            <div class="form-group half">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group half">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
           </div>
           
-          <p>Sound business management is the backbone of any thriving organization. Our business operations services go beyond basic oversight to provide a holistic view of your operational health. Our experts:</p>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Your Company">
+          </div>
           
-          <ul class="service-features">
-            <li><i class="fas fa-check"></i> Ensure accurate and timely record-keeping</li>
-            <li><i class="fas fa-check"></i> Develop streamlined workflows to reduce overhead costs</li>
-            <li><i class="fas fa-check"></i> Implement advanced reporting tools for real-time insights</li>
-            <li><i class="fas fa-check"></i> Provide guidance on business operations</li>
-            <li><i class="fas fa-check"></i> Optimize process management</li>
-            <li><i class="fas fa-check"></i> Prepare detailed forecasts and budgets</li>
-          </ul>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="How can we help you?" required>
+          </div>
           
-          <p>By integrating best practices and the latest technology, we help you maintain a solid operational foundation that supports sustainable growth and stability.</p>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
+          </div>
           
-          <a href="#contact" class="btn btn-primary mt-4">Optimize Your Operations</a>
-        </div>
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to our newsletter for industry insights and updates</label>
+          </div>
+          
+          <div class="form-group">
+            <button type="submit" class="submit-button">Send Message</button>
+          </div>
+        </form>
       </div>
     </div>
   </section>
 
   <!-- Team Section -->
-  <section id="team" class="team section-padding bg-light">
+  <section id="team" class="team">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">Meet Our Experts</span>
-        <h2 class="section-title">Our Leadership Team</h2>
-        <p class="section-description">We have assembled a team of seasoned professionals with deep expertise across various domains.</p>
+      <div class="section-title">
+        <h2>Our Expert Team</h2>
       </div>
+      <p class="section-subtitle">Meet the experienced professionals behind Theseus Consulting Group who are passionate about your success.</p>
       
       <div class="team-grid">
-        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="team-image">
-            <img src="images/team-1.jpg" alt="Alexander Wright" class="img-fluid">
-            <ul class="team-social">
-              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fas fa-envelope"></i></a></li>
-            </ul>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="team-1.jpg" alt="Alexander Wright">
           </div>
-          <div class="team-info">
-            <h3>Alexander Wright</h3>
-            <span>Founder & CEO</span>
-            <p>Over 15 years of experience in business strategy and organizational transformation.</p>
+          <div class="member-info">
+            <h3 class="member-name">Alexander Wright</h3>
+            <p class="member-position">Founder & CEO</p>
+            <p>Former CFO with 15+ years of experience in financial strategy and business transformation.</p>
+            <div class="member-socials">
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
           </div>
         </div>
         
-        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="team-image">
-            <img src="images/team-2.jpg" alt="Olivia Thompson" class="img-fluid">
-            <ul class="team-social">
-              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fas fa-envelope"></i></a></li>
-            </ul>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="team-2.jpg" alt="Olivia Thompson">
           </div>
-          <div class="team-info">
-            <h3>Olivia Thompson</h3>
-            <span>Learning Solutions Director</span>
+          <div class="member-info">
+            <h3 class="member-name">Olivia Thompson</h3>
+            <p class="member-position">Learning Solutions Director</p>
             <p>EdTech specialist with extensive experience in developing corporate learning programs.</p>
+            <div class="member-socials">
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
           </div>
         </div>
         
-        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="team-image">
-            <img src="images/team-3.jpg" alt="Robert Kim" class="img-fluid">
-            <ul class="team-social">
-              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fas fa-envelope"></i></a></li>
-            </ul>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="team-3.jpg" alt="Robert Kim">
           </div>
-          <div class="team-info">
-            <h3>Robert Kim</h3>
-            <span>Operations Lead</span>
-            <p>Specialist with expertise in creating efficient operational systems for growing businesses.</p>
+          <div class="member-info">
+            <h3 class="member-name">Robert Kim</h3>
+            <p class="member-position">Financial Services Lead</p>
+            <p>CPA with specialized expertise in creating efficient bookkeeping systems for growing businesses.</p>
+            <div class="member-socials">
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
           </div>
         </div>
         
-        <div class="team-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="team-image">
-            <img src="images/team-4.jpg" alt="Elena Rodriguez" class="img-fluid">
-            <ul class="team-social">
-              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fas fa-envelope"></i></a></li>
-            </ul>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="team-4.jpg" alt="Elena Rodriguez">
           </div>
-          <div class="team-info">
-            <h3>Elena Rodriguez</h3>
-            <span>Process Optimization Specialist</span>
+          <div class="member-info">
+            <h3 class="member-name">Elena Rodriguez</h3>
+            <p class="member-position">Process Optimization Specialist</p>
             <p>Six Sigma Black Belt with a track record of successful business process reengineering projects.</p>
+            <div class="member-socials">
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="cta-section section-padding bg-primary-gradient">
+  <!-- Stats Section -->
+  <section class="stats">
     <div class="container">
-      <div class="cta-content" data-aos="zoom-in">
-        <h2>Ready to Transform Your Business?</h2>
-        <p>Let's discuss how Theseus Consulting Group can help you achieve your business goals.</p>
-        <a href="#contact" class="btn btn-light">Get Started Today</a>
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number">150+</div>
+          <div class="stat-title">Clients Served</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-title">Client Satisfaction</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-number">25+</div>
+          <div class="stat-title">Industry Experts</div>
+        </div>
+        
+        <div class="stat-item">
+          <div class="stat-number">5</div>
+          <div class="stat-title">Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Management Section (Enhanced) -->
+  <section id="learning-management" class="container">
+    <div class="section-title">
+      <h2>Learning Management Solutions</h2>
+    </div>
+    <p class="section-subtitle">Empower your organization with tailored learning systems that drive growth and innovation.</p>
+    
+    <div class="about-grid">
+      <div class="about-content">
+        <p>
+          In today's fast-paced world, continuous learning is essential for maintaining a competitive edge. Our Learning
+          Management solutions empower organizations to foster a culture of professional growth and innovation. We design
+          and implement robust systems that:
+        </p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+          <li>Provide personalized, engaging training experiences</li>
+          <li>Integrate seamlessly with existing HR and IT infrastructures</li>
+          <li>Leverage analytics to measure effectiveness and ROI</li>
+          <li>Offer scalable solutions for remote, hybrid, and on-site workforces</li>
+          <li>Support compliance requirements and regulatory training needs</li>
+          <li>Enable self-directed learning and career advancement pathways</li>
+        </ul>
+        <p>
+          From onboarding new hires to upskilling seasoned professionals, our Learning Management strategies ensure your
+          workforce remains agile, motivated, and prepared for the challenges ahead.
+        </p>
+        <a href="#contact" class="cta-button">Discuss Your Learning Needs</a>
+      </div>
+      <div class="about-image">
+        <img src="learning-management.jpg" alt="Learning Management Solution">
+      </div>
+    </div>
+  </section>
+
+  <!-- Bookkeeping Section (Enhanced) -->
+  <section id="bookkeeping" class="container" style="background-color: var(--light);">
+    <div class="section-title">
+      <h2>Bookkeeping & Business Services</h2>
+    </div>
+    <p class="section-subtitle">Build a solid financial foundation with our comprehensive bookkeeping and financial management solutions.</p>
+    
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="bookkeeping.jpg" alt="Bookkeeping Services">
+      </div>
+      <div class="about-content">
+                  <p>
+          Sound business management is the backbone of any thriving organization. Our services go beyond
+          basic record-keeping to provide a holistic view of your operational health. Our experts:
+        </p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+          <li>Ensure accurate and timely record-keeping</li>
+          <li>Develop streamlined workflows to reduce overhead costs</li>
+          <li>Implement advanced reporting tools for real-time insights</li>
+          <li>Provide guidance on business operations</li>
+          <li>Optimize process management</li>
+          <li>Prepare detailed forecasts and budgets</li>
+        </ul>
+        <p>
+          By integrating best practices and the latest technology, we help you maintain a solid operational foundation that
+          supports sustainable growth and stability.
+        </p>
+        <a href="#contact" class="cta-button">Get Financial Clarity</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payroll Section (New) -->
+  <section id="payroll" class="container">
+    <div class="section-title">
+      <h2>Payroll Solutions</h2>
+    </div>
+    <p class="section-subtitle">Take the complexity out of payroll with our accurate, efficient, and compliant solutions.</p>
+    
+    <div class="about-grid">
+      <div class="about-content">
+        <p>
+          Managing payroll can be time-consuming and complex, with significant consequences for errors. Our payroll solutions
+          are designed to simplify this critical function while ensuring accuracy and compliance. We offer:
+        </p>
+        <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+          <li>Full-service payroll processing and management</li>
+          <li>Tax filing and compliance services</li>
+          <li>Employee self-service portals for pay stubs and tax documents</li>
+          <li>Integration with HR and accounting systems</li>
+          <li>Benefits administration and tracking</li>
+          <li>Custom reporting and analytics</li>
+        </ul>
+        <p>
+          Our payroll specialists stay updated on the latest regulations and requirements, giving you peace of mind
+          that your payroll operations are in expert hands.
+        </p>
+        <a href="#contact" class="cta-button">Streamline Your Payroll</a>
+      </div>
+      <div class="about-image">
+        <img src="payroll.jpg" alt="Payroll Solutions">
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact section-padding">
+  <section id="contact" class="contact">
     <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-subtitle">Get In Touch</span>
-        <h2 class="section-title">Contact Us</h2>
-        <p class="section-description">Have questions or ready to start a project? Reach out to our team today.</p>
+      <div class="section-title">
+        <h2>Get In Touch</h2>
       </div>
+      <p class="section-subtitle">Have questions or ready to explore how we can help? Reach out to our team today.</p>
       
       <div class="contact-grid">
-        <div class="contact-info" data-aos="fade-right">
-          <div class="contact-card">
-            <div class="contact-card-icon">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
               <i class="fas fa-map-marker-alt"></i>
             </div>
-            <div class="contact-card-content">
-              <h3>Our Location</h3>
-              <p>2850 E Camelback Rd, Suite 110<br>Phoenix, AZ 85016</p>
+            <div class="contact-text">
+              <span class="contact-label">Our Location</span>
+              <span>2850 E Camelback Rd, Suite 110<br>Phoenix, AZ 85016</span>
             </div>
           </div>
           
-          <div class="contact-card">
-            <div class="contact-card-icon">
-              <i class="fas fa-phone-alt"></i>
-            </div>
-            <div class="contact-card-content">
-              <h3>Call Us</h3>
-              <p>+1 (602) 555-1234<br>+1 (602) 555-5678</p>
-            </div>
-          </div>
-          
-          <div class="contact-card">
-            <div class="contact-card-icon">
+          <div class="contact-item">
+            <div class="contact-icon">
               <i class="fas fa-envelope"></i>
             </div>
-            <div class="contact-card-content">
-              <h3>Email Us</h3>
-              <p>info@theseusconsulting.com<br>support@theseusconsulting.com</p>
+            <div class="contact-text">
+              <span class="contact-label">Email Us</span>
+              <span>info@theseusconsulting.com<br>support@theseusconsulting.com</span>
             </div>
           </div>
           
-          <div class="contact-card">
-            <div class="contact-card-icon">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-text">
+              <span class="contact-label">Call Us</span>
+              <span>+1 (415) 555-1234<br>+1 (415) 555-5678</span>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
               <i class="fas fa-clock"></i>
             </div>
-            <div class="contact-card-content">
-              <h3>Business Hours</h3>
-              <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: By appointment only</p>
+            <div class="contact-text">
+              <span class="contact-label">Business Hours</span>
+              <span>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: By appointment only</span>
             </div>
           </div>
         </div>
         
-        <div class="contact-form-container" data-aos="fade-left">
-          <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <p class="hidden">
-              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-            </p>
-            
-            <div class="form-row">
-              <div class="form-group half">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-              </div>
-              
-              <div class="form-group half">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required>
-              </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" required>
             </div>
             
             <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="How can we help you?" required>
+              <input type="email" class="form-control" placeholder="Your Email" required>
             </div>
             
             <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
+              <input type="text" class="form-control" placeholder="Subject">
             </div>
             
             <div class="form-group">
-              <input type="hidden" name="form-name" value="contact">
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <textarea class="form-control" placeholder="Your Message" required></textarea>
             </div>
+            
+            <button type="submit" class="form-button">Send Message</button>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Map Section -->
-  <div class="map-section">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.9971065069334!2d-112.02831342391986!3d33.50973017354721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0d4c8e48b95b%3A0xb5c42f967c305c0b!2s2850%20E%20Camelback%20Rd%20%23110%2C%20Phoenix%2C%20AZ%2085016!5e0!3m2!1sen!2sus!4v1709516120945!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-
   <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <div class="container">
-      <div class="footer-top">
-        <div class="footer-column">
-          <div class="footer-logo">
-            <img src="logo.png" alt="Theseus Consulting Group">
-            <span>Theseus</span>
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>About Theseus</h3>
+          <p>Theseus Consulting Group is dedicated to helping businesses navigate complex challenges and achieve sustainable growth through innovative solutions in learning management, finance, and operations.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
           </div>
-          <p>Theseus Consulting Group is dedicated to helping businesses navigate complex challenges and achieve sustainable growth through innovative solutions.</p>
-          <ul class="social-links">
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
         </div>
         
-        <div class="footer-column">
+        <div class="footer-col footer-links">
           <h3>Quick Links</h3>
-          <ul class="footer-links">
+          <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#email-contact">Contact</a></li>
             <li><a href="#team">Our Team</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
         
-        <div class="footer-column">
+        <div class="footer-col footer-links">
           <h3>Our Services</h3>
-          <ul class="footer-links">
+          <ul>
             <li><a href="#learning-management">Learning Management</a></li>
-            <li><a href="#business-operations">Business Operations</a></li>
-            <li><a href="#process-optimization">Process Optimization</a></li>
-            <li><a href="#payroll-solutions">Payroll Solutions</a></li>
-            <li><a href="#hr-consulting">HR Consulting</a></li>
+            <li><a href="#bookkeeping">Bookkeeping & Finance</a></li>
+            <li><a href="#payroll">Payroll Solutions</a></li>
+            <li><a href="#optimization">Process Optimization</a></li>
+            <li><a href="#">Strategic Consulting</a></li>
+            <li><a href="#">Technology Integration</a></li>
           </ul>
         </div>
         
-        <div class="footer-column">
+        <div class="footer-col footer-newsletter">
           <h3>Newsletter</h3>
           <p>Subscribe to our newsletter for the latest insights and industry trends.</p>
-          <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="newsletter">
-            <div class="form-group">
-              <input type="email" name="email" placeholder="Your Email" required>
-              <button type="submit"><i class="fas fa-paper-plane"></i></button>
-            </div>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your Email" required>
+            <button type="submit" class="newsletter-button"><i class="fas fa-paper-plane"></i></button>
           </form>
         </div>
       </div>
       
-      <div class="footer-bottom">
+      <div class="copyright">
         <p>&copy; 2025 Theseus Consulting Group. All Rights Reserved.</p>
-        <ul class="footer-bottom-links">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Sitemap</a></li>
-        </ul>
       </div>
     </div>
   </footer>
 
   <!-- Back to Top Button -->
-  <a href="#" class="back-to-top">
-    <i class="fas fa-arrow-up"></i>
-  </a>
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  
-  <!-- Main JavaScript -->
-  <script src="main.js"></script>
+  <!-- JavaScript for Enhanced Functionality -->
+  <script>
+    // Mobile Navigation Toggle
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (mobileToggle) {
+      mobileToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+        const icon = this.querySelector('i');
+        if (icon) {
+          icon.classList.toggle('fa-bars');
+          icon.classList.toggle('fa-times');
+        }
+      });
+    }
+    
+    // Header Scroll Effect
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (header) {
+        if (window.scrollY > 100) {
+          header.classList.add('header-scrolled');
+        } else {
+          header.classList.remove('header-scrolled');
+        }
+      }
+    });
+    
+    // Back to Top Button
+    const backToTopButton = document.querySelector('.back-to-top');
+    
+    if (backToTopButton) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add('active');
+        } else {
+          backToTopButton.classList.remove('active');
+        }
+      });
+      
+      backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Close mobile menu if open
+          if (navMenu && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            if (mobileToggle) {
+              const icon = mobileToggle.querySelector('i');
+              if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+              }
+            }
+          }
+        }
+      });
+    });
+    
+    // Form submission - prevent default and show confirmation
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! We will get back to you soon.');
+        this.reset();
+      });
+    }
+    
+    // Email form submission
+    const emailForm = document.getElementById('emailForm');
+    if (emailForm) {
+      emailForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for contacting us! We will respond to your inquiry shortly.');
+        this.reset();
+      });
+    }
+    
+    // You can add more interactive functionality here
+    // Netlify will execute this JavaScript as it's included directly in the HTML
+  </script>
 </body>
 </html>
